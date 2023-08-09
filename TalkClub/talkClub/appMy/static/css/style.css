@@ -18,7 +18,7 @@ body{
 }
 
 #index-body{
-    background-image: url(../img/nier.gif);
+    background-image: url("../img/gif.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
