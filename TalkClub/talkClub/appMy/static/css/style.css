@@ -1,8 +1,9 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'VT323', monospace;
 
 }
 
@@ -18,10 +19,35 @@ body{
 }
 
 #index-body{
-    background-image: url("../img/gif.gif");
+    background-image: url("../img/anadearmas.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* Index Page Start */
 
+#navbar-bg{
+    background-color: deeppink;
+}
+
+#hot-bg{
+    background-color: #198fbf;
+    margin-top: 2rem;
+    /* border-radius: 20px */
+    opacity: 0.85;
+    color: white;
+    /* border-radius: 20px; */
+    border: 5px solid white;
+}
+
+#table-bg{
+    margin-top: 2rem;
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    /* border-radius: 20px; */
+    border: 5px solid white;
+}
+
+/* Index Page End */
