@@ -28,7 +28,9 @@ body{
 /* Index Page Start */
 
 #navbar-bg{
-    background-color: deeppink;
+    background-color: rgba(205, 56, 180, 0.85);
+    border: 5px solid white;
+
 }
 
 #navbar-bg-2{
