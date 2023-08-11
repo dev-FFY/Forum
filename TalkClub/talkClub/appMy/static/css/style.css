@@ -19,7 +19,7 @@ body{
 }
 
 #index-body{
-    background-image: url("../img/anadearmas.gif");
+    background-image: url("../img/bladerunner.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,6 +29,12 @@ body{
 
 #navbar-bg{
     background-color: deeppink;
+}
+
+#navbar-bg-2{
+    background-color: #198fbf;
+    justify-content: center;
+    display: flex;
 }
 
 #hot-bg{
@@ -52,3 +58,23 @@ body{
 }
 
 /* Index Page End */
+
+/* REGISTER PAGE START */
+
+#register-bg{
+
+    border: white solid 10px;
+    border-radius: 0px;
+}
+
+/* REGISTER PAGE END */
+
+/* LOGIN PAGE START */
+
+#login-bg{
+
+    border-radius: 0px;
+    border: white solid 10px;
+}
+
+/* LOGIN PAGE END */
