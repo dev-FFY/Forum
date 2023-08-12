@@ -27,25 +27,19 @@ body{
 
 /* Index Page Start */
 
-#navbar-bg{
+/* #navbar-bg{
     background-color: rgba(205, 56, 180, 0.85);
     border: 5px solid white;
 
-}
+} */
 
-#navbar-bg-2{
-    background-color: #198fbf;
-    justify-content: center;
-    display: flex;
-}
+
 
 #hot-bg{
     background-color: #198fbf;
     margin-top: 2rem;
-    /* border-radius: 20px */
     opacity: 0.85;
     color: white;
-    /* border-radius: 20px; */
     border: 5px solid white;
     
 }
@@ -54,8 +48,7 @@ body{
     margin-top: 2rem;
     background-color: black;
     opacity: 0.85;
-    color: white;
-    /* border-radius: 20px; */
+    color: white !important;
     border: 5px solid white;
 }
 
