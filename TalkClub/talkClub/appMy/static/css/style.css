@@ -36,6 +36,7 @@ body{
 
 
 #hot-bg{
+
     background-color: #198fbf;
     margin-top: 2rem;
     opacity: 0.85;
@@ -44,12 +45,20 @@ body{
     
 }
 
-#table-bg{
-    margin-top: 2rem;
+
+#table-bg {
     background-color: black;
     opacity: 0.85;
-    color: white !important;
+    color: white;
     border: 5px solid white;
+    width: 70%; /* Tablo genişliği ayarlanabilir */
+    border-collapse: collapse;
+    margin: 0 auto; /* Ortalamak için */
+}
+
+th,td{
+    color: white;
+    border: 1px solid white;
 }
 
 /* Index Page End */
