@@ -51,9 +51,8 @@ body{
     opacity: 0.85;
     color: white;
     border: 5px solid white;
-    width: 70%; /* Tablo genişliği ayarlanabilir */
     border-collapse: collapse;
-    margin: 0 auto; /* Ortalamak için */
+
 }
 
 th,td{
