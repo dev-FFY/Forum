@@ -4,7 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'VT323', monospace;
+    
 
+}
+
+a{
+    text-decoration: none;
 }
 
 body{
@@ -27,16 +32,31 @@ body{
 
 /* Index Page Start */
 
-/* #navbar-bg{
+/* NAVBAR START */
+#navbar-bg{
     background-color: rgba(205, 56, 180, 0.85);
     border: 5px solid white;
+    opacity: 0.85;
+    padding: 1rem;
 
-} */
+}
+
+#navbar-toggler{
+    border: solid black 3px;
+}
+
+#search-btn-id{
+    border-color: black;
+    --bs-btn-hover-bg: #198fbf;
+}
 
 main{
-    width: 80%;
     display: flex;
     justify-content: center;
+}
+
+.main-container{
+    width: 80%;
 }
 
 #hot-bg{
@@ -46,6 +66,7 @@ main{
     opacity: 0.85;
     color: white;
     border: 5px solid white;
+    padding: 1.5rem;
     
 }
 
@@ -56,25 +77,18 @@ main{
     color: white;
     border: 5px solid white;
     border-collapse: collapse;
+    margin-top: 2rem;
 
 }
 
-/* th,td{
+th,td{
     color: white;
     border: 1px solid white;
-} */
+    padding: 1rem;
+    
+} 
 
 /* Index Page End */
-
-/* REGISTER PAGE START */
-
-#register-bg{
-
-    border: white solid 10px;
-    border-radius: 0px;
-}
-
-/* REGISTER PAGE END */
 
 /* LOGIN PAGE START */
 
@@ -85,3 +99,13 @@ main{
 }
 
 /* LOGIN PAGE END */
+
+/* REGISTER PAGE START */
+
+#register-bg{
+
+    border: white solid 10px;
+    border-radius: 0px;
+}
+
+/* REGISTER PAGE END */
