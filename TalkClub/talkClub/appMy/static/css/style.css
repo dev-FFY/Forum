@@ -33,7 +33,11 @@ body{
 
 } */
 
-
+main{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 
 #hot-bg{
 
@@ -55,10 +59,10 @@ body{
 
 }
 
-th,td{
+/* th,td{
     color: white;
     border: 1px solid white;
-}
+} */
 
 /* Index Page End */
 
