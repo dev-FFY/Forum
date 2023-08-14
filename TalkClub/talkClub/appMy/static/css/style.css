@@ -38,7 +38,7 @@ body{
     border: 5px solid white;
     opacity: 0.85;
     padding: 1rem;
-
+    z-index: 10;
 }
 
 #navbar-toggler{
