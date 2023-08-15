@@ -23,7 +23,7 @@ body{
     background-attachment: fixed;
 }
 
-#index-body{
+#index-body, #question-body{
     background-image: url("../img/bladerunner.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,6 +49,10 @@ body{
     border-color: black;
     --bs-btn-hover-bg: #198fbf;
 }
+
+/* NAVBAR END */
+
+/* MAIN START */
 
 main{
     display: flex;
@@ -88,6 +92,8 @@ th,td{
     
 } 
 
+/* MAIN END */
+
 /* Index Page End */
 
 /* LOGIN PAGE START */
@@ -109,3 +115,14 @@ th,td{
 }
 
 /* REGISTER PAGE END */
+
+/* QUESTION PAGE START */
+
+#question-body{
+    background-image: url("../img/bladerunner.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* QUESTION PAGE END */

@@ -11,6 +11,9 @@ def Register(request):
 def Login(request):
     return render(request,'login.html')
 
+def Question(request):
+    return render(request,'question.html')
+
 
 def Register(request):
 
