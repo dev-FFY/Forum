@@ -37,14 +37,23 @@
       
                     <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                     <p class="text-white-50 mb-5">Please enter your login and password!</p>
+
+                    <form method="POST">
+
+                      {% csrf_token %}
+                      {% if information %}
+                      <div class="alert alert-danger" role="alert">
+                        {{information}}
+                       </div>
+                      {% endif %}
       
                     <div class="form-outline form-white mb-4">
-                      <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                      <input type="Username" id="typeEmailX" class="form-control form-control-lg" name="username" />
                       <label class="form-label" for="typeEmailX">Email</label>
                     </div>
       
                     <div class="form-outline form-white mb-4">
-                      <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                      <input type="Password" id="typePasswordX" class="form-control form-control-lg" name="password" />
                       <label class="form-label" for="typePasswordX">Password</label>
                     </div>
       
@@ -55,9 +64,11 @@
                   </div>
       
                   <div>
-                    <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+                    <p class="mb-0">Don't have an account? <a href="/register/" class="text-white-50 fw-bold">Sign Up</a>
                     </p>
                   </div>
+
+                </form>
       
                 </div>
               </div>

@@ -1,5 +1,7 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from .models import *
+from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def Index(request):
@@ -16,40 +18,62 @@ def Question(request):
 
 
 def Register(request):
-
-        if request.method=='POST':
-                name=request.POST['name']
-                email=request.POST['email']
-                password=request.POST['password']
-                confirm_password=request.POST['confirm_password']
-                gender=request.POST['gender']
-
-                if password == confirm_password:
-                    if User.objects.filter(username=name).exists():
-                        context = {
-                            "information": "Bu kullanıcı kullanılıyor, farklı bir kullanıcı adı deneyiniz."
-                        }
-                        return render(request, 'register.html', context)
-
-                    if User.objects.filter(email=email).exists():
-
-                        context = {
-                            "information": "E-mail adresi kullanılıyor farklı bir mail ile kayıt işlemine devam edebilirsiniz."
-                            
-                        }
-                        return render (request,'register.html',context)
+    
+    if request.method=='POST':
+        nickname=request.POST['nickname']
+        email=request.POST['email']
+        password=request.POST['password']
+        confirm_password=request.POST['confirm_password']
+        
+        if password == confirm_password:
+            if User.objects.filter(username=nickname).exists():
+                context={
+                    "information":"nickname alınmış."
+                }
+                return render(request,'register.html', context)
+            
+            if User.objects.filter(email=email).exists():
+                
+                context = {
+                    "information":"email alınmış"                    
+                }
+                return render (request,'register.html',context)
+            
+            else:
+                user=User.objects.create_user(username=nickname, email=email, password=password,)
+                user.save()
+                
+                return redirect("login")
+                
+        else:
+            context={
+                "information":"parola uyuşmuyor"
+            }
+                
+            return render (request,'register.html',context)
                     
-                    else:
-                        user=User.objects.create_user(username=name,email=email, password=password)
-                        user.save()
-                        
-                        return redirect("kaydol")
+    return render(request,'register.html')
 
-                else:
-                    context = {
-                        "information": "Parolanız girmiş olduğunuz parolayla uyuşmuyor, kontrol ediniz."
-                    }
-
-                    return render(request, 'register.html', context)
-
-        return render(request, 'register.html')
+def Login(request):
+    
+    if request.method=='POST':
+        username=request.POST['username']
+        password=request.POST['password']
+        
+        user=authenticate(request,username=username,password=password)
+        
+        if user is not None:
+            login(request,user)
+            return redirect('main')
+        
+        else:
+            
+            context={
+                
+                "information":"hatalı"
+                
+            }
+            
+            return render(request,'login.html', context)
+    
+    return render(request,'login.html')
