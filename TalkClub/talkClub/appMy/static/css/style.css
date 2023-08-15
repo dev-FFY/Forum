@@ -94,6 +94,18 @@ th,td{
 
 /* MAIN END */
 
+/* FORUM INFO START */
+
+#forum-info-id{
+    padding: 1rem;
+    font-size: larger;
+    background-color: rgba(205, 56, 180, 0.85);
+    opacity: 0.85;
+    border: solid white 5px;
+    margin-top: 2rem;
+}
+/* FORUM INFO END */
+
 /* Index Page End */
 
 /* LOGIN PAGE START */
