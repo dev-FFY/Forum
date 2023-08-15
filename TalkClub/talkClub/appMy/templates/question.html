@@ -97,13 +97,62 @@
   
   <!-- NAVBAR END -->
 
+  <!-- QUESTION MAIN START -->
+
+  <div style="display: flex; justify-content: center;">
+    
+    <h1 id="question-h1">LET'S DISGUSS</h1>
+
+  </div>
+
     <div id="question-main">
-        <input type="text" placeholder="Please enter a title">
+      
+        <input id="question-title-input" type="text" placeholder="Title">
+
+        <div class="dropdown-center">
+          <button id="question-toggle-categories" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action two</a></li>
+            <li><a class="dropdown-item" href="#">Action three</a></li>
+          </ul>
+        </div>
 
     </div>
 
+<!-- QUESTION MAIN END -->
+
+<!-- TEXT EDITOR/CONTENT START -->
+
+<textarea style="    width: 70%;
+display: flex;
+/* justify-content: center; */
+margin: auto;
+border: 12px solid white;
+background-color: lightskyblue;
+opacity: 0.85;" id="w3review" name="w3review" rows="10" cols="150">
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat doloremque, sapiente facilis accusantium repudiandae commodi sint maxime nihil tempore laudantium. Ratione repellendus, corporis similique exercitationem aliquam eos deleniti mollitia.
+  </textarea>
+
+<!-- TEXT EDITOR/CONTENT END -->
+
+<!-- TAGS AND SUBMIT START -->
+
+<div style="display: flex; justify-content: center; margin-top: 1rem;">
+  
+  <input id="tag-title-input" type="text" placeholder="Tag(s)">
+
+  <button id="question-submit-btn">Submit</button>
+
+</div>
 
 
+
+
+<!-- TAGS AND SUBMIT END -->
 
 
 
