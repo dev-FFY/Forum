@@ -15,12 +15,20 @@ a{
 body{
     overflow-x: hidden;
 }
+#login-body{
+    background-image: url("../img/starwars.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+}
 
-#login-body, #register-body{
+#register-body{
     background-image: url("../img/nyancat.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position-x: center;
 }
 
 #index-body, #question-body{
