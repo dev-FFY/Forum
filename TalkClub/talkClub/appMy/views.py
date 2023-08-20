@@ -16,6 +16,9 @@ def Login(request):
 def Question(request):
     return render(request,'question.html')
 
+def Post(request):
+    return render(request,'post.html')
+
 
 def Register(request):
     
@@ -28,14 +31,14 @@ def Register(request):
         if password == confirm_password:
             if User.objects.filter(username=nickname).exists():
                 context={
-                    "information":"nickname alınmış."
+                    "information":"This nickname is already in use!"
                 }
                 return render(request,'register.html', context)
             
             if User.objects.filter(email=email).exists():
                 
                 context = {
-                    "information":"email alınmış"                    
+                    "information":"This email is already in use!"                    
                 }
                 return render (request,'register.html',context)
             
@@ -47,7 +50,7 @@ def Register(request):
                 
         else:
             context={
-                "information":"parola uyuşmuyor"
+                "information":"Passwords don't match!"
             }
                 
             return render (request,'register.html',context)
@@ -70,7 +73,7 @@ def Login(request):
             
             context={
                 
-                "information":"hatalı"
+                "information":"Incorrect"
                 
             }
             
