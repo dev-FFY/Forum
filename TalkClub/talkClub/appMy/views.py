@@ -18,7 +18,8 @@ def Question(request):
 
 def Post(request):
     return render(request,'post.html')
-
+def Comment(request):
+    return render(request,'comment.html')
 
 def Register(request):
     

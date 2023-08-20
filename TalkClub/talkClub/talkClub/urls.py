@@ -25,6 +25,7 @@ urlpatterns = [
     path('login/',Login,name='login'),
     path('question/',Question,name='question'),
     path('post/',Post,name='post'),
+    path('comment/',Comment,name='comment'),
     
 ]
 
