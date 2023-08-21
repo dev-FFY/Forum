@@ -57,6 +57,12 @@ body{
     border-color: black;
     --bs-btn-hover-bg: #198fbf;
 }
+  
+  #hover li a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0,5s;
+  }
+  
 
 /* NAVBAR END */
 
