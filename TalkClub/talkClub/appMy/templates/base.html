@@ -43,7 +43,7 @@
     <!-- NAVBAR LEFT ITEMS START -->
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul id="hover" class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul id="navbar-hover" class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -64,7 +64,7 @@
 
     <!-- NAVBAR DROPDOWN START -->
 
-        <li class="nav-item active dropdown">
+        <li id="navbar-dropown-hover" class="nav-item active dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories
           </a>
@@ -93,8 +93,6 @@
       <form class="d-flex" role="search">
         <input style="font-size: x-large;" class="form-control me-2" type="search"  placeholder="Search" aria-label="Search">
         <button onclick="window.location.href='{% url 'login' %}'" id="search-btn-id" class="btn btn-outline-success" type="button"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> </button>
-
-        
       </form>
     </div>
   </div>
@@ -134,3 +132,6 @@ style="padding: 1rem;
 
 </body>
 </html>
+
+
+
