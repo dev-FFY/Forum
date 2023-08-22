@@ -4,6 +4,9 @@ from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 
+def login_view(request):
+    return render(request, 'login.html')
+
 def Index(request):
     return render(request,'index.html')
 
