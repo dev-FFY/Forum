@@ -226,7 +226,7 @@ th,td{
 /* POST PAGE END */
 
 
-
+/* COMMENT PAGE START */
 
 #comment-cards{
     background-color: black;
@@ -234,5 +234,7 @@ th,td{
     color: white;
     border: white solid 5px;
     border-radius: 0px;
-    font-size: larger;
+    font-size:x-large;
 }
+
+/* COMMENT PAGE END */
