@@ -58,9 +58,14 @@ body{
     --bs-btn-hover-bg: #198fbf;
 }
   
-  #hover li a:hover {
+  #navbar-hover li a:hover {
     color: rgba(255, 255, 255, 0.8);
     transition: 0,5s;
+  }
+
+  #navbar-dropown-hover ul li a:hover{
+    background-color: rgba(205, 56, 180, 0.85);
+    color: white;
   }
   
 
