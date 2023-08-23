@@ -92,7 +92,12 @@
 
       <form class="d-flex" role="search">
         <input style="font-size: x-large;" class="form-control me-2" type="search"  placeholder="Search" aria-label="Search">
-        <button onclick="window.location.href='{% url 'login' %}'" id="search-btn-id" class="btn btn-outline-success" type="button"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i> </button>
+        {% if user.is_authenticated %}
+        <button onclick="window.location.href='{% url 'logout' %}'" id="search-btn-id" class="btn btn-outline-success" type="button"> LOGOUT </i> </button>
+        {% else %}
+        <button onclick="window.location.href='{% url 'login' %}'" id="search-btn-id" class="btn btn-outline-success" type="button"> LOGIN </button>
+        {% endif %}
+
       </form>
     </div>
   </div>

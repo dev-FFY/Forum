@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import *
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout as lt
 # Create your views here.
 
 def login_view(request):
@@ -84,3 +85,8 @@ def Login(request):
             return render(request,'login.html', context)
     
     return render(request,'login.html')
+
+@login_required
+def logout(request):
+    lt(request)
+    return redirect('login')
