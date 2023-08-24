@@ -64,6 +64,9 @@ def Register(request):
 
 def Login(request):
     
+    if request.user.is_authenticated:  # Kullanıcı zaten oturum açmışsa
+        return redirect('main')
+    
     if request.method=='POST':
         username=request.POST['username']
         password=request.POST['password']
@@ -77,7 +80,7 @@ def Login(request):
         else:
             
             context={
-                
+
                 "information":"Incorrect"
                 
             }
