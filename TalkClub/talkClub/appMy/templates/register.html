@@ -86,8 +86,8 @@
 
                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
 
-                            <select class="select form-outline form-white flex-fill mb-0 rounded" name="gender">
-                              <option value="1" disabled>Gender</option>
+                            <select id="genderSelect" class="select form-outline form-white flex-fill mb-0 rounded" name="gender">
+                              <option value="1" selected disabled>Gender</option>
                               <option value="2">Female</option>
                               <option value="3">Male</option>
                               <option value="4">Other</option>
@@ -95,12 +95,12 @@
           
                           </div>
       
-                        <div class="form-check d-flex justify-content-center mb-5">
-                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                          <label class="form-check-label" for="form2Example3">
-                            I agree all statements in <a href="#!">Terms of service</a>
-                          </label>
-                        </div>
+                          <div class="form-check d-flex justify-content-center mb-5">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" required />
+                            <label class="form-check-label" for="form2Example3">
+                              I agree all statements in <a href="#!">Terms of service</a>
+                            </label>
+                          </div>
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <button type="submit" class="btn btn-primary btn-lg">Register</button>
@@ -124,5 +124,18 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
       ></script>
-</body>
+
+      <script>
+        const genderSelect = document.getElementById('genderSelect');
+        const registerForm = document.querySelector('form');
+      
+        registerForm.addEventListener('submit', function(event) {
+          if (genderSelect.value === '1') {
+            event.preventDefault();  // Formu göndermeyi engelle
+            alert('Please select a gender.');  // Kullanıcıya uyarı ver
+          }
+        });
+      </script>
+
+    </body>
 </html>
