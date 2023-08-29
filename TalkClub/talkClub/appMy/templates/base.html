@@ -90,15 +90,8 @@
 
       <!-- NAVBAR RIGHT ITEMS START -->
 
-      <form class="d-flex" role="search">
-        <input style="font-size: x-large;" class="form-control me-2" type="search"  placeholder="Search" aria-label="Search">
-        {% if user.is_authenticated %}
-        <button onclick="window.location.href='{% url 'logout' %}'" id="search-btn-id" class="btn btn-outline-success" type="button"> LOGOUT </i> </button>
-        {% else %}
-        <button onclick="window.location.href='{% url 'login' %}'" id="search-btn-id" class="btn btn-outline-success" type="button"> LOGIN </button>
-        {% endif %}
-
-      </form>
+    
+    
     </div>
   </div>
 </nav>
@@ -125,7 +118,7 @@ style="padding: 1rem;
       MyForum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
   </div>
   <span><u>5,369</u> Posts in <u>48</u> Topics by <u>8,124</u> Members.</span><br>
-  <span>Latest post: <b><a href="">Random post</a></b> on Dec 15 2021 By <a href="">NOBODY</a></span>.<br>
+  <span>Latest post: <b><a href="#">Random post</a></b> on Dec 15 2021 By <a href="#">NOBODY</a></span>
   <span>Check <a href="">the latest posts</a> .</span><br>
 </div>
 
@@ -134,7 +127,8 @@ style="padding: 1rem;
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-
+  
+    
 </body>
 </html>
 
