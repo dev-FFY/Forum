@@ -20,3 +20,5 @@ def Post(request):
 def Comment(request):
     return render(request,'comment.html')
 
+
+
