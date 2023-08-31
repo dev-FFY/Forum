@@ -21,15 +21,12 @@ from appMy.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/',Index ,name='main'),
+    path('',Index ,name='main'),
     path('question/',Question,name='question'),
     path('post/',Post,name='post'),
     path('comment/',Comment,name='comment'),
     path('tinymce/', include('tinymce.urls')),
     path('hitcount/', include('hitcount.urls', namespace='hitcount')),
-     path('login/',Login,name='login'),
-    path("logout/", logout, name="logout"),
-    path('register/',Register,name='register'),
     
 ]
 
