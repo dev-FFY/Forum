@@ -19,25 +19,19 @@
           <!--Original thread-->
           <div class="head">
               <div class="authors">Author</div>
-              <div class="content">Topic: random topic (Read 1325 Times)</div>
+              <div class="content">Topic: {{post.title}} (Read 1325 Times)</div>
           </div>
 
           <div class="body">
               <div class="authors">
-                  <div class="username"><a href="">Username</a></div>
+                  <div class="username"><a href="">{{post.user.fullname|title}}</a></div>
                   <div>Role</div>
-                  <img src="../static/img/nier2.webp" alt="">
+                  <img src="{{post.user.profile_pic.url}}" alt="">
                   <div>Posts: <u>45</u></div>
                   <div>Points: <u>4586</u></div>
               </div>
               <div class="content">
-                  Just a random content of a random topic.
-                  <br>To see how it looks like.
-                  <br><br>
-                  Nothing more and nothing less.
-                  <br>
-                  <hr>
-                  Regards username
+                  {{post.content|safe}}
                   <br>
                   <div class="comment">
                       <button onclick="showComment()">Comment</button>

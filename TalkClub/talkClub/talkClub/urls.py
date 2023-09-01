@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from appMy.views import *
+from appMy.views import Comment
+from django.urls import path
+
 # from appMy.views import login, register, logout
 
 urlpatterns = [
@@ -24,9 +27,9 @@ urlpatterns = [
     path('',Index ,name='main'),
     path('question/',Question,name='question'),
     path('post/',Post,name='post'),
-    path('comment/',Comment,name='comment'),
     path('tinymce/', include('tinymce.urls')),
     path('hitcount/', include('hitcount.urls', namespace='hitcount')),
+    path('comment/<slug>/', Comment, name='comment'),
     
 ]
 
