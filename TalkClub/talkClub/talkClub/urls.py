@@ -30,6 +30,7 @@ urlpatterns = [
     path('tinymce/', include('tinymce.urls')),
     path('hitcount/', include('hitcount.urls', namespace='hitcount')),
     path('comment/<slug>/', Comment, name='comment'),
+
     
 ]
 

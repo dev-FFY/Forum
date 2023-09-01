@@ -254,6 +254,7 @@ th,td{
     margin-top: 3px;
     padding: 1rem;
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
